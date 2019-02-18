@@ -1,0 +1,35 @@
+
+
+body {
+	margin: 0px;
+	background-color: #fefffe; 	#off-white
+}
+
+/*****************************************************************************/
+
+#stripe {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 350px;
+	height: 100%;
+	border-right: 3px dashed #3A445D; 	#charcoal black
+}
+
+.stripe-box {
+	height: 100%;
+	border: 1px solid red;
+}
+
+
+
+
+
+/*****************************************************************************/
+
+#board {
+
+
+}
+
