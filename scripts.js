@@ -1,5 +1,5 @@
 
-var $board = $('#board').isotope({
+var $grid = $('#grid').isotope({
 	itemSelector: '.note-item',
 	layoutMode: 'fitRows',
 	getSortData: {
@@ -15,7 +15,7 @@ var $board = $('#board').isotope({
 
 $( document ).ready {
 	alert("page is ready!");
-	$board.isotope({ sortBy: random });
+	$grid.isotope({ sortBy: random });
 }
 
 

@@ -7,6 +7,7 @@ body {
 }
 
 /*****************************************************************************/
+/*SIDE-BAR related*/
 
 #stripe {
 	width: 350px;
@@ -72,10 +73,30 @@ a:hover {
 }
 
 /*****************************************************************************/
+/*FILTER-BAR related*/
 
 #board {
 	float: right;
 	width: 72%;
+}
+
+#filterbar {
+	position: fixed;
+	right: 0%; 		/* right-align */
+	width:400px;
+	height: 50px;
+	margin: 10px;
+	margin-top: 0px;
+	border: 1px dashed #FCAF5D;
+	border-top: none;
+}
+
+
+/*****************************************************************************/
+/*GRID related*/
+
+#grid {
+	margin-top: 55px; /*this value should be 5px larger than the height of #filterbar*/
 	height: 800px;
 }
 
@@ -83,26 +104,27 @@ a:hover {
 	position: relative;
 	float: left;
 	width: 205px; 
-	height: 205px;
+	height: 210px;
 	margin: 10px;
 	border-width: 1px;
 	border-style: dashed;
 }
 
 .blog { 	/* one of the (3) types of board notes*/
-	border-color: #87a0b2; 		/*tan-orange*/
+	border-color: #FCAF5D; 		/*tan-orange*/
 }
 
 .misc { 	/* one of the (3) types of board notes */
-	border-color: #1a535c;		/*whale-blue*/
+	border-color: #1a535c; 		/*english-green*/
 }
 
 .project { 	/* one of the (3) types of board notes */
-	border-color: #fcaf5d;		/*english-green*/
+	border-color: #87A0B2;		/*whale-blue*/
 }
 
 .note-item .text {
-	padding: 10px;
+	font-size: 12px;
+	padding: 5px 10px;
 }
 
 .note-item h3 {
@@ -112,3 +134,9 @@ a:hover {
 	text-decoration: underline;
 }
 
+.note-item .finetext {
+	float: left;
+	font-size: 10px;
+}
+
+/*****************************************************************************/
