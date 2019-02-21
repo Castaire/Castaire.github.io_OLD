@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <head>
 	<link href="styles.css" rel="stylesheet" >
-	
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Dosis|Cutive+Mono" 
+	rel="stylesheet">
 
-	<script src="isotope.pkgd.min"></script>
-	<script src="script.js"></script>
+	<script src="libraries/jquery-3.3.1.min.js"></script>
+	<script src="libraries/isotope.pkgd.min.js"></script>
+	<script src="scripts.js"></script>
 </head>
 <body>
 	<div id="stripe">
@@ -15,9 +14,10 @@
 			<h1>>> JENNE HUI</h1>
 			<div class="text">
 				<p>
-					22. UBC '19. Statistics + Comp. Sci. <br><br>
-					~ Diligently keyboard-poking and hoarding resources. In my spare time, I enjoy working on
-					new projects, <br>
+					22. UBC 2019. Statistics + Comp. Sci <br><br>
+					<span>&nbsp; About me: &nbsp;</span> <br>
+					~ Diligently keyboard-poking and hoarding resources. In my spare time, I enjoy working on new projects, playing music, and drinking hot beverages.
+					<br><br>
 					Thanks for visiting my site! ~ <br><br>
 				</p>
 			</div>
@@ -26,11 +26,11 @@
 		<div class="stripe-box" id="quests">
 			<div class="text">
 				<p>
-					<span>&nbsp; Current Quests &nbsp;</span> <br>
+					<span>&nbsp; Current Quests: &nbsp;</span> <br>
 					- <s>&nbsp;Finish required courses for degree&nbsp;</s> <br>
 					- Find a full-time software dev position <br>
-					- Stay alive :)
-					<br>
+					- Keep HP above 0
+					<br><br>
 				</p>
 			</div>
 		</div>
@@ -49,25 +49,41 @@
 				</p>
 			</div>
 		</div>
-
-		<div class="stripe-box" id="misc" style="border-bottom: none;">
-			<div class="text">
-				<p>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				</p>
-			</div>
-		</div>
 	</div>
 
-	<!--------------------------------------------------------------------------------------------->
+	<!------------------------------------------------------------------------>
 
 	<div id="board">
-		
+		<div class="note-item misc" name="Misc 1" date="2019-02-20">
+			<div class="text">
+				<p>fluffy</p>
+			</div>
+		</div>
 
+		<div class="note-item blog" name="Blog Post 1" date="2019-01-30">
+			<div class="text">
+				<p>fluffiness</p>
+			</div>
+		</div>
+
+		<div class="note-item project" date="2017-05-26">
+			<div class="text">
+				<h3>Spot-Notes!</h3>
+				<p>A Chrome notification that notifies you whenever an artist you follow has made a new release!</p>
+			</div>
+		</div>
+
+		<div class="note-item project" name="Project 1" date="2016-12-25">
+			<div class="text">
+				<p>floof</p>
+			</div>
+		</div>
+
+		<div class="note-item misc" name="Misc 2" date="2016-01-01">
+			<div class="text">
+				<p>mcfloof</p>
+			</div>
+		</div>
 
 	</div>
 </body>

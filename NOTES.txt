@@ -3,29 +3,70 @@
 --- PERSONA : notes  ---
 ------------------------
 
-Fonts:
+>> Fonts:
 - large  : 	Cutive Mono (regular) ???
-	>> https://fonts.google.com/specimen/Cutive+Mono
+	+ https://fonts.google.com/specimen/Cutive+Mono
 
 - medium : 	Dosis (regular)
-	>> https://fonts.google.com/specimen/Dosis?selection.family=Dosis
+	+ https://fonts.google.com/specimen/Dosis?selection.family=Dosis
 
 - small  : 	Lato (regular)
-	>> https://fonts.google.com/specimen/Lato?selection.family=Lato
+	+ https://fonts.google.com/specimen/Lato?selection.family=Lato
 
+>> Typeform: used this to create feedback / contact form
 
+>> Color Scheme :
 
-Color Scheme :
-
-+ SCHEME 01
-6C8A9B 	- grey-blue mood 	
-E6E6E4  - light slate grey 	(blue-ish)
-F9F5EF  - platinum white   	(off-white, grey)
-FD6574  - shell red  	  	(slight off-red)
-
-+ SCHEME 02
 3A445D 	- charcoal black
 FEFFFE	- off-white 			(pretty much XD)
 FCAF5D	- tan orange
-87A0B2	- whale grey 			(blue-ish, slate)
-1A535C	- english blue-green	(dark green, green-blue-grey)
+87A0B2	- whale blue 			(blue-ish, slate)
+1A535C	- english green 		(dark green, green-blue-grey)
+
+>> SORTING OPTIONS :
+	- sort by date (default; newest first)
+
+	- sort by type 
+		. miscellaneous (small notes / reminders / thoughts ???)
+		. projects
+		. blog posts 	(none so far, LOL)
+
+		(^ each block type should be displayed with a different color)
+
+	- sort by alphabetical order
+
+>> BOARD NOTE object values:
+	- type { miscellaneous, project, block post }
+	- name 
+	- date
+
+	> each board note should be a link that either points to a project page on 
+		GitHub or a small single-page post in a separate url
+
+>> BOARD NOTE design: 
+	- title -> name
+	- 
+
+>> DESIGN notes:
+	- simple fixed-position drop-down in upper-right corner to filter out the
+		notes on the board
+
+	- ^ maybe a color-coded tick-box? 
+
+	- maybe an extra page that shows a timeline overview?
+		*** do this after writing initial page ***
+
+>> MISC:
+- <p class="hidden">hey brah</p> 
+	.hidden {
+		display: none;
+		type: hidden;
+	}
+
+	^ hides text / stuff without allocating space
+
+- TODO: we probably want to use fixed-size for page sections 
+
+
+
+
