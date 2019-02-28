@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Dosis|Cutive+Mono" 
 	rel="stylesheet">
 
-	<script src="libraries/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="libraries/isotope.pkgd.min.js"></script>
 	<script src="scripts.js"></script>
 </head>
@@ -16,7 +16,7 @@
 			<p>
 				22. UBC 2019. Statistics + Comp. Sci <br><br>
 				<span>&nbsp; About me: &nbsp;</span> <br>
-				~ Diligently keyboard-poking and hoarding resources. In my spare time, I enjoy working on new projects, playing music, and drinking hot beverages.
+				~ Diligently keyboard-poking and hoarding resources. In my spare time, I enjoy working on new projects, listening to music, reading, and drinking hot beverages.
 				<br><br>
 				Thanks for visiting my site! ~ <br><br>
 			</p>
@@ -44,7 +44,7 @@
 				<a href="https://linkedin.com/in/jenne-hui/" target="_blank">@ LinkedIn</a>
 				<br>
 
-				<span>&nbsp; Resume: &nbsp;&nbsp;</span> <a href="https://drive.google.com/file/d/1OTZCa7tGl9rT26mcyi7J8VdQbtXK95wk/view?usp=sharing" target="_blank">read me!</a>
+				<span>&nbsp; Resumé: &nbsp;&nbsp;</span> <a href="https://drive.google.com/file/d/1OTZCa7tGl9rT26mcyi7J8VdQbtXK95wk/view?usp=sharing" target="_blank">read me!</a>
 				<br>
 
 				<span>&nbsp; Other: &nbsp;&nbsp;&nbsp;</span> 
@@ -62,8 +62,17 @@
 
 <div id="board">
 	<div id="filterbar">
+		<div class="customCheckBox">
+			<input type="checkbox" id="showProjects">
+			<label class="project" for="showProjects"></label>
+			<p>PROJECTS</p>
+		</div>
 
-
+		<div class="customCheckBox">
+			<input type="checkbox" id="showWork">
+			<label class="work" for="showWork"></label>
+			<p>WORK</p>
+		</div>
 	</div>
 
 	<div id="grid">
@@ -136,9 +145,10 @@
 		<div class="note-item project" date="2018-02-18">
 			<div class="text">
 				<h3>its okay</h3>
-				<p>A small venture into building a Reddit bot that "respects tables".
+				<p>A very small venture into building a Reddit bot that respects tables.<br>
+					(╯°□°）╯︵ ┻━┻
 				</p>
-				<br><br>
+				<br>
 
 				<a class="finetext" href="https://github.com/Castaire/itsokay" target="_blank">
 					>> Github
@@ -176,7 +186,6 @@
 			<div class="text">
 				<h3>TSSE</h3>
 				<p>Trader Smith's Spaceship Emporium! A nifty sci-fi RPG prototype developed in Unity!</p>
-				<br>
 
 				<a class="finetext" href="https://github.com/weedle/TSSE2016" target="_blank">
 					>> Github
@@ -187,7 +196,6 @@
 				</a>
 			</div>
 		</div>
-
 	</div>
 </div>
 </body>

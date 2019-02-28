@@ -2,7 +2,7 @@
 
 body {
 	margin: 0px;
-	background-color: #fefffe; 	/*off-white*/
+	background-color: #F7F3E6; 	/* linen-white */
 	color: #3A445D;				/*charcoal-black*/
 }
 
@@ -35,7 +35,7 @@ h1 {
 
 span {
 	background-color: #3a445d; 		/*charcoal-black*/
-	color: #FEFFFE;					/*off-white*/
+	color: #F7F3E6;					/*linen-white*/
 }
 
 .text {
@@ -45,12 +45,12 @@ span {
 }
 
 ::selection {
-	color: #FEFFFE;					/*off-white*/
+	color: #F7F3E6;					/*linen-white*/
 	background-color: #3a445d; 		/*charcoal*/
 }
 
 ::-moz-selection {
-	color: #FEFFFE; 				/*off-white*/
+	color: #F7F3E6; 				/*linen-white*/
 	background-color: #3a445d; 		/*charcoal*/
 }
 
@@ -81,22 +81,56 @@ a:hover {
 }
 
 #filterbar {
-	position: fixed;
-	right: 0%; 		/* right-align */
-	width:400px;
+	width: 97.5%;
 	height: 50px;
-	margin: 10px;
+	margin: 0px 10px;
 	margin-top: 0px;
-	border: 1px dashed #FCAF5D;
+	border: 1px dashed #FCAF5D;		/* tan-orange */
 	border-top: none;
+	background-color: #F7F3E6; 		/* linen-white */
+	z-index: 1000;
 }
+
+#filterbar p {
+	display: inline;
+	margin-left: 15px;
+	font-family: monospace;
+	letter-spacing: 0.2em;
+}
+
+/* hide default 'checkbox' styling */
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.customCheckBox {
+	display: inline-block;
+	position: relative;
+	top: 13.5px;
+	width: 150px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+/* custom box for the chceckbox XD XD XD*/
+.customCheckBox label {
+	position: absolute;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: dashed;
+}
+
 
 
 /*****************************************************************************/
 /*GRID related*/
 
 #grid {
-	margin-top: 55px; /*this value should be 5px larger than the height of #filterbar*/
+	margin-top: 60px; /*this value should be 5px larger than the height of #filterbar*/
+	margin-top: 5px;
 	height: 800px;
 }
 
@@ -114,7 +148,7 @@ a:hover {
 	border-color: #FCAF5D; 		/*tan-orange*/
 }
 
-.misc { 	/* one of the (3) types of board notes */
+.work { 	/* one of the (3) types of board notes */
 	border-color: #1a535c; 		/*english-green*/
 }
 

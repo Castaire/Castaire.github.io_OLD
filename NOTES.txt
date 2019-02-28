@@ -22,6 +22,7 @@ FEFFFE	- off-white 			(pretty much XD)
 FCAF5D	- tan orange
 87A0B2	- whale blue 			(blue-ish, slate)
 1A535C	- english green 		(dark green, green-blue-grey)
+F7F3E6 	- linen white 			(think warm pillows from the dryer)
 
 >> SORTING OPTIONS :
 	- sort by date (default; newest first)
