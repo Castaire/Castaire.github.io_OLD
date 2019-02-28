@@ -23,6 +23,8 @@ FCAF5D	- tan orange
 87A0B2	- whale blue 			(blue-ish, slate)
 1A535C	- english green 		(dark green, green-blue-grey)
 F7F3E6 	- linen white 			(think warm pillows from the dryer)
+CE2F59	- brick red 			(also, fire trucks)
+053B91 	- airforce blue 		(or dark lego-block blue? )
 
 >> SORTING OPTIONS :
 	- sort by date (default; newest first)
@@ -44,9 +46,6 @@ F7F3E6 	- linen white 			(think warm pillows from the dryer)
 	> each board note should be a link that either points to a project page on 
 		GitHub or a small single-page post in a separate url
 
->> BOARD NOTE design: 
-	- title -> name
-	- 
 
 >> DESIGN notes:
 	- simple fixed-position drop-down in upper-right corner to filter out the
@@ -57,16 +56,9 @@ F7F3E6 	- linen white 			(think warm pillows from the dryer)
 	- maybe an extra page that shows a timeline overview?
 		*** do this after writing initial page ***
 
+	- ** MAKE COLORS WARMER or RE-ADJUST COLOR TINTS **
+
 >> MISC:
-- <p class="hidden">hey brah</p> 
-	.hidden {
-		display: none;
-		type: hidden;
-	}
-
-	^ hides text / stuff without allocating space
-
-- TODO: we probably want to use fixed-size for page sections 
 
 
 

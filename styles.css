@@ -85,7 +85,7 @@ a:hover {
 	height: 50px;
 	margin: 0px 10px;
 	margin-top: 0px;
-	border: 1px dashed #FCAF5D;		/* tan-orange */
+	border: 2px dashed #3a445d;
 	border-top: none;
 	background-color: #F7F3E6; 		/* linen-white */
 	z-index: 1000;
@@ -129,7 +129,6 @@ input[type=checkbox] {
 /*GRID related*/
 
 #grid {
-	margin-top: 60px; /*this value should be 5px larger than the height of #filterbar*/
 	margin-top: 5px;
 	height: 800px;
 }
@@ -144,16 +143,20 @@ input[type=checkbox] {
 	border-style: dashed;
 }
 
-.blog { 	/* one of the (3) types of board notes*/
-	border-color: #FCAF5D; 		/*tan-orange*/
+.work { 	/* one of the (3) types of board notes */
+	border-color: #CE2F59; 		/*brick-red*/
 }
 
-.work { 	/* one of the (3) types of board notes */
-	border-color: #1a535c; 		/*english-green*/
+.redtitle {			/*make item title red :) */
+	color: #CE2F59;
 }
 
 .project { 	/* one of the (3) types of board notes */
 	border-color: #87A0B2;		/*whale-blue*/
+}
+
+.filter {
+	border-color: #053B91; 		/*airforce-blue*/
 }
 
 .note-item .text {

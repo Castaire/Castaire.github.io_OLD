@@ -8,12 +8,14 @@ $(document).ready(function(){
 		sortAscending: false
 	});
 
-	// set up default sorting / filtering
+	// show ONLY 'project' items, by default
 	$projectInput = $("#board #filterbar .customCheckBox #showProjects");
 	$projectLabel = $projectInput.next(); 
 	$projectInput.prop('checked', true);
 	$projectLabel.css('background-color', $projectLabel.css('border-color'));
 
+	$grid.isotope({filter: ".project"});
+	
 
 	// add handlers to sorting / filtering options
 	$("#board #filterbar .customCheckBox > label").click(
@@ -28,13 +30,12 @@ function setupGrid(){
 		itemSelector: '.note-item',
 		layoutMode: 'fitRows',
 		getSortData: {
-			//name: '.text > h3',
 			name: function(item) {
 				var nameVal = $(item).find(".text > h3").text();
 				return(nameVal.toLowerCase());
 			},
 			date: '[date]',
-			type: function(item) { // 'type' is always the SECOND class for a note object
+			type: function(item) { 		// 'type' is always the SECOND class for a note object
 				var typeVal = $(item).attr('class').split(' ')[1];
 				return(typeVal);
 			}
@@ -45,50 +46,27 @@ function setupGrid(){
 }
 
 
-/**
- *	
- *	@param {EventObject} event 		- event object corresponding to the 'click'
- *  @param {Object} 		 	- isotope object correponding to the grid
- */	
+
 function handleCheckBoxClick(event){
-	console.log(event);
+	var $g = $(event.data.grid); 				// isotope grid
+	var $checkboxLabel = $(event.target);		// get label for the selected checkbox
+	var $input = $($checkboxLabel.prev()); 		// get associated 'input'
 
-	var $target = $(event.target); 	// the custm checkbox that was selected
-	var $targetInput = $($target.prev()); 	// get associated 'input'
+	var type = $checkboxLabel.attr('class');
 
-	console.log($targetInput);
-	console.log($targetInput.is(':checked'));
+	var filterString = '';
+	var colorString = '';
 
-	var $g = $(event.data.grid);
-
-	var type = $target.attr('for');
-
-	switch(type) {
-		case "showProjects":
-			console.log(`clicked: ${type}`);
-
-
-			if($targetInput.is(':checked')){
-				$g.isotope({ filter: ':not(.project)'});
-				$target.css("background-color", "default");
-
-			}else{
-				$g.isotope({ filter: '.project'});
-				alert("not checked previously");
-				$target.css("background-color", "red");
-			}
-
-			break;
-
-		case "showWork":
-			console.log(`clicked: ${type}`);
-			$g.isotope({ filter: '.work'});
-			break;
-
-		default:
-			console.log("couldn't handle selected element");
+	if($input.is(':checked')){
+		filterString = {val: `:not(.${type})`};
+		colorString= {val: "initial"};
+	}else{
+		filterString = {val: `.${type}`};
+		colorString = {val: $checkboxLabel.css("border-color")};
 	}
 
+	$g.isotope({ filter: `${filterString.val}`});
+	$checkboxLabel.css("background-color", `${colorString.val}`);
 }
 
 
