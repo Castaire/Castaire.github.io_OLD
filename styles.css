@@ -143,15 +143,15 @@ input[type=checkbox] {
 	border-style: dashed;
 }
 
-.work { 	/* one of the (3) types of board notes */
+.work { 	/* one of the (2) types of board notes */
 	border-color: #CE2F59; 		/*brick-red*/
 }
 
-.redtitle {			/*make item title red :) */
+.redtitle {			/*make item title red */
 	color: #CE2F59;
 }
 
-.project { 	/* one of the (3) types of board notes */
+.project { 	/* one of the (2) types of board notes */
 	border-color: #87A0B2;		/*whale-blue*/
 }
 

@@ -60,6 +60,18 @@ CE2F59	- brick red 			(also, fire trucks)
 
 >> MISC:
 
+	- logic: 
+
+		'projects' 		'work'	
+		YES				YES 			- show all items 			"*"
+		NO 				YES 			- show only work 			".work"
+		YES				NO 				- show only projects 		".project"
+		NO 				NO 				- don't show anything  		":not(.work.project)"
+
+	- projects -> checked ---> click ---> projects 'not checked', work 'not checked'
+	- work -> not checked ---> click ---> projects 'checked', work 'not checked'
+
+
 
 
 
