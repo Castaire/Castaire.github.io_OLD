@@ -25,6 +25,11 @@ body {
 	border-bottom: 2px dashed #3a445d;			/*charcoal-black*/
 }
 
+/* workaround for IE, since default font sizes are different ...*/
+.stripe-box p {
+	font-size: 13px;
+}
+
 h1 {
 	color: #3a445d;
 	text-align: center;
@@ -94,6 +99,7 @@ a:hover {
 	margin-left: 15px;
 	font-family: monospace;
 	letter-spacing: 0.2em;
+	font-size: 13px; 		/*to override default font-size in IE :( */
 }
 
 /* hide default 'checkbox' styling */
@@ -223,7 +229,11 @@ input[type=checkbox] {
 	}
 }
 
-
+/**
+ *
+ *
+ *
+ */
 @media (max-width:555px){
 	#grid {
 		width: 100%;
