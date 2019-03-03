@@ -67,9 +67,13 @@ span {
 	text-align: left;
 }
 
-a, a:visited {
+a {
 	color: black;
 	text-decoration: none;
+}
+
+a:visited {
+	color: black;
 }
 
 a:hover {
@@ -183,8 +187,8 @@ input[type=checkbox] {
 /* FOOTER related*/
 
 #footer {
+	font-size: 10px;
 	text-align: center;
-	margin-bottom: 25px;
 }
 
 /*****************************************************************************/

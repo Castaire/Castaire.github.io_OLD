@@ -60,12 +60,12 @@ function setupGrid(){
  */
 function initCheckboxStates(projectInput, workInput, byDateInput, byNameInput){	
 	$projectLabel = $projectInput.next();
-	$projectLabel.css('background-color', $projectLabel.css('border-color'));
 	$projectInput.prop("checked", "true");
+	updateCheckBox($projectInput);
 
 	$byDateLabel = $byDateInput.next();
-	$byDateLabel.css('background-color', $byDateLabel.css('border-color'));
 	$byDateInput.prop("checked", "true");
+	updateCheckBox($byDateInput);
 
 	// show ONLY 'project' items, by date (ascending)
 	$grid.isotope({filter: '.project'});
@@ -126,7 +126,7 @@ function updateCheckBox(checkboxInput){
 	var $label = $(checkboxInput).next();
 
 	if($(checkboxInput).is(":checked")){
-		$label.css("background-color", $label.css("border-color"));
+		$label.css("background-color", $label.css("border-top-color"));
 	}else{
 		$label.css("background-color", "initial");
 	}
