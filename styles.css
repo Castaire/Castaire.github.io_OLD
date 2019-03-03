@@ -77,12 +77,10 @@ a:hover {
 
 #board {
 	float: right;
-	width: 72%;
+	width: calc(100% - 355px);
 }
 
 #filterbar {
-	width: 97.5%;
-	height: 50px;
 	margin: 0px 10px;
 	margin-top: 0px;
 	border: 2px dashed #3a445d;
@@ -107,9 +105,9 @@ input[type=checkbox] {
 	display: inline-block;
 	position: relative;
 	top: 13.5px;
-	width: 150px;
+	width: 120px;
 	height: 30px;
-	margin-left: 10px;
+	margin: 0px 0px 20px 15px;
 }
 
 /* custom box for the chceckbox XD XD XD*/
@@ -130,14 +128,13 @@ input[type=checkbox] {
 
 #grid {
 	margin-top: 5px;
-	height: 800px;
 }
 
 .note-item {
 	position: relative;
 	float: left;
-	width: 205px; 
-	height: 210px;
+	width: 200px; 
+	height: 205px;
 	margin: 10px;
 	border-width: 1px;
 	border-style: dashed;
@@ -177,3 +174,67 @@ input[type=checkbox] {
 }
 
 /*****************************************************************************/
+/* SCREEN-SIZE ADJUSTMENTS */
+
+/*USAGE: 	when grid displays*/
+/**
+ * 	USAGE: 	prevent grid from displaying 1 item per row
+ * 			-> instead, display hamburger formatting
+ */
+@media (max-width:815px){
+
+	#stripe {
+		float: none;
+		position: relative;
+		width: auto;
+		margin: 20px 45px;
+		border-left: 2px dashed #3A445D;
+	}
+
+	.stripe-box {
+		border-top: 2px dashed #3A445D;
+		border-bottom: none;
+		padding: 0px 20px;
+	}
+
+	#contact {
+		text-align: center;
+		border-bottom: 2px dashed #3A445D;
+	}
+
+	#contact .text {
+		margin-left: 20px;
+	}
+
+	#contact .text p span {
+		line-height: 2.5;
+	}
+
+	#board {
+		float: none;
+		position: relative;
+		width: auto;
+		margin: 10px 45px;
+	}
+
+	#filterbar {
+		width: auto;
+		border-top: 2px dashed #3A445D;
+	}
+}
+
+
+@media (max-width:555px){
+	#grid {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+
+	.note-item {
+		width: 95%;
+		height: 170px;
+	}
+}
+
+
+
