@@ -179,10 +179,11 @@ input[type=checkbox] {
 	font-size: 10px;
 }
 
+
+
 /*****************************************************************************/
 /* SCREEN-SIZE ADJUSTMENTS */
 
-/*USAGE: 	when grid displays*/
 /**
  * 	USAGE: 	prevent grid from displaying 1 item per row
  * 			-> instead, display hamburger formatting
@@ -229,20 +230,30 @@ input[type=checkbox] {
 	}
 }
 
-/**
- *
- *
- *
+/** 
+ * 	USAGE: 	set tiles to full width, so the grid
+ * 			doesn't look so weird XD
  */
-@media (max-width:555px){
+@media (max-width:680px){
 	#grid {
 		width: 100%;
 		margin-bottom: 45px;
 	}
-
 	.note-item {
 		width: 95%;
 		height: 170px;
+	}
+}
+
+/**
+ * 	USAGE: minor change to margins
+ */
+@media (max-width:510px){
+	#stripe {
+		margin: 30px 20px;
+	}
+	#board {
+		margin: 30px 20px;
 	}
 }
 
