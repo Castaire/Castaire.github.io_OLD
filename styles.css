@@ -220,7 +220,7 @@ input[type=checkbox] {
 	}
 
 	#contact .text {
-		margin-left: 20px;
+		margin-left: 5px;
 	}
 
 	#contact .text p span {
@@ -260,10 +260,10 @@ input[type=checkbox] {
  */
 @media (max-width:510px){
 	#stripe {
-		margin: 30px 20px;
+		margin: 30px 20px 15px 20px;
 	}
 	#board {
-		margin: 30px 20px;
+		margin: 0px 20px 30px 20px;
 	}
 }
 
