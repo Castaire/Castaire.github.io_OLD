@@ -256,15 +256,51 @@ input[type=checkbox] {
 }
 
 /**
- * 	USAGE: minor change to margins
+ * 	USAGE: mobile revamp :)
+ * 			-> decrease overall font-size by 2 px.
  */
 @media (max-width:510px){
 	#stripe {
 		margin: 30px 20px 15px 20px;
 	}
-	#board {
-		margin: 0px 20px 30px 20px;
+
+	h1 {
+		font-size: 30px;
 	}
+
+	.stripe-box .text p {
+		font-size: 11px;
+	}
+
+	#contact .text {
+		font-size: ;
+		margin-left: 0px;
+	}
+
+	#board {
+		margin: 0px 20px 25px 20px;
+	}
+
+	#filterbar p {
+		font-size: 11px;
+	}
+
+	#grid {
+		margin-bottom: 20px;
+	}
+
+	.note-item .text h3 {
+		font-size: 16.72px;
+	}
+
+	.note-item .text p {
+		font-size: 11px;
+	}
+
+	#footer {
+		font-size: 11px;
+	}
+
 }
 
 
