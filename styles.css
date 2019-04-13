@@ -68,12 +68,13 @@ span {
 }
 
 a {
-	color: black;
+	color: #3A445D;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:visited {
-	color: black;
+	color: #3A445D;
 }
 
 a:hover {

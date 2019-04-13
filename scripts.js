@@ -28,7 +28,48 @@ $(document).ready(function(){
 		{grid: $grid, byNameElem : $byNameInput, byDateElem : $byDateInput }, 
 		handleSorting);
 
+
+	// TESTING ////////////////////////////////////////////////////////////////
+
+	// -- NO --
+	//$('a').click({grid: $grid}, expandItem);
+
+	$('a').click({grid: $grid}, swish);
+
 });
+
+
+// TESTING ////////////////////////////////////////////////////////////////////
+
+
+// -- NO --
+function expandItem(event){
+	console.log(event.target);
+
+	// get parent 'note-item' of the selected link
+	var $parentCell = $(event.target).parent().parent();
+	console.log($parentCell);
+
+	// expand the item
+	$parentCell.css("height", "450px");
+	setupGrid();
+}
+
+// NOTES: 
+function swish(event){
+
+
+
+
+}
+
+
+
+
+
+
+// TESTING ////////////////////////////////////////////////////////////////////
+
 
 // USAGE: 	initializes grid and sort-by keys
 function setupGrid(){
@@ -121,6 +162,7 @@ function handleSorting(event){
 	updateCheckBox($(event.data.byDateElem));
 }
 
+
 // USAGE: 	updates check box fill depending on state
 function updateCheckBox(checkboxInput){
 	var $label = $(checkboxInput).next();
@@ -131,5 +173,7 @@ function updateCheckBox(checkboxInput){
 		$label.css("background-color", "initial");
 	}
 }
+
+
 
 
