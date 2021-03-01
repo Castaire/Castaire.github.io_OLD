@@ -17,7 +17,6 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	border-right: 2px dashed #3A445D; 			/*charcoal-black*/
-	font-family: monospace;
 }
 
 .stripe-box {
@@ -59,8 +58,13 @@ span {
 	background-color: #3a445d; 		/*charcoal*/
 }
 
-#intro .text {
+#intro .text, #quests .text {
 	padding: 0px 15px;
+}
+
+.stripe-box .align-left {
+	text-align: left;
+	margin-left: 15px;
 }
 
 #contact .text {
