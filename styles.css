@@ -92,6 +92,7 @@ a:hover {
 #board {
 	float: right;
 	width: calc(100% - 355px);
+	max-width: 2000px;
 }
 
 #filterbar {
@@ -103,6 +104,7 @@ a:hover {
 	border-top: none;
 	background-color: #F7F3E6; 		/* linen-white */
 	z-index: 1000;
+	max-width: 100%;
 }
 
 #filterbar p {
@@ -124,9 +126,12 @@ input[type=checkbox] {
 	flex-grow: 1;
 	position: relative;
 	top: 13.5px;
-	width: 120px;
 	height: 30px;
 	margin: 0px 0px 20px 15px;
+	max-width: 130px;
+
+	/* ensure flex item retain max-width and flex properties !!!*/
+	border: 1px solid transparent;
 }
 
 /* custom box for the chceckbox XD XD XD*/
