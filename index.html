@@ -21,6 +21,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="libraries/isotope.pkgd.min.js"></script>
 	<script src="scripts.js"></script>
+	<script>
+		function load_js()
+		{
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.src='scripts.js';
+			head.appendChild(script);
+		}
+		load_js();
+	</script>
 </head>
 <body>
 <div id="stripe">
@@ -31,13 +41,15 @@
 				Software Dev @ Conexiom. <br>UBC 2019. Statistics + Comp. Sci<br><br>
 				<span>&nbsp; About me: &nbsp;</span><br>
 				~ Hi, Jenne here!<br><br>I am mostly occupied with work these days, but in my spare time you can usually find me:<br>
-				<p class="align-left">
-					- building random projects<br>
-					- making music<br>
-					- art... ing<br>
-					(mostly pixel art, watercolors, <br>
-					sketching)<br>
-				</p>
+			</p>
+			<p class="align-left">
+				- building random projects<br>
+				- making music<br>
+				- art... ing<br>
+				(mostly pixel art, watercolors, <br>
+				sketching)<br><br>
+			</p>
+			<p>
 				Thanks for visiting my site! ~ <br><br>
 			</p>
 		</div>

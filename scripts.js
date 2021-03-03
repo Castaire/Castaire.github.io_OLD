@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	console.log("Thanks for visiting my site!");
 
@@ -29,7 +28,6 @@ $(document).ready(function(){
 		handleSorting);
 });
 
-
 // USAGE: 	initializes grid and sort-by keys
 function setupGrid(){
 	var $grid = $('#grid').isotope({
@@ -55,8 +53,8 @@ function setupGrid(){
 /**
  *  USAGE: initializes checkboxes to the states described below
  * 	STATES: 
- *		- project, byDate 	:  checked, filled-in
- *     	- work, byName 		:  unchcked, not filled-in
+ *		- project, work, byDate 	:  checked, filled-in
+ *     	- byName 					:  unchcked, not filled-in
  */
 function initCheckboxStates(projectInput, workInput, byDateInput, byNameInput){	
 	$projectLabel = $projectInput.next();

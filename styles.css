@@ -95,6 +95,8 @@ a:hover {
 }
 
 #filterbar {
+	display:flex;
+	flex-wrap: wrap;
 	margin: 0px 10px;
 	margin-top: 0px;
 	border: 2px dashed #3a445d;
@@ -117,7 +119,9 @@ input[type=checkbox] {
 }
 
 .customCheckBox {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
 	position: relative;
 	top: 13.5px;
 	width: 120px;
